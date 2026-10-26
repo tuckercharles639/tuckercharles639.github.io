@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>诱咪网：AI 喵内容生成任务台，一键批量产出与实时追踪</title>
+<meta name="keywords" content="诱咪网,AI内容生成,批量创作,任务管理,萌宠内容,AI写作平台">
+<meta name="description" content="诱咪网是面向内容创作者的 AI 喵内容生成任务台，支持批量任务创建、模型切换、实时耗时统计与失败重试。平台聚合多家主流模型，逐条展示开始时间、结束时间、用时与产出字数，红色状态标即时提示异常，助手可在同一页面完成重试、换模型与删除操作。">
+<link rel="canonical" href="https://ymw.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="诱咪网：AI 喵内容生成任务台，一键批量产出与实时追踪">
+<meta property="og:description" content="诱咪网是面向内容创作者的 AI 喵内容生成任务台，支持批量任务创建、模型切换、实时耗时统计与失败重试。平台聚合多家主流模型，逐条展示开始时间、结束时间、用时与产出字数，红色状态标即时提示异常，助手可在同一页面完成重试、换模型与删除操作。无论你运营萌宠账号、专栏还是电商素材库，诱咪网都能把琐碎的生成流程压缩成一张清晰的任务清单，让每一篇文章、每一段文案的进度与结果一目了然。">
+<meta property="og:url" content="https://ymw.pages.dev/">
+<meta property="og:site_name" content="诱咪网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="诱咪网：AI 喵内容生成任务台，一键批量产出与实时追踪">
+<meta name="twitter:description" content="诱咪网是面向内容创作者的 AI 喵内容生成任务台，支持批量任务创建、模型切换、实时耗时统计与失败重试。平台聚合多家主流模型，逐条展示开始时间、结束时间、用时与产出字数，红色状态标即时提示异常，助手可在同一页面完成重试、换模型与删除操作。无论你运营萌宠账号、专栏还是电商素材库，诱咪网都能把琐碎的生成流程压缩成一张清晰的任务清单，让每一篇文章、每一段文案的进度与结果一目了然。">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"诱咪网","url":"https://ymw.pages.dev/","description":"诱咪网是面向内容创作者的 AI 喵内容生成任务台，支持批量任务创建、模型切换、实时耗时统计与失败重试，聚合多家主流模型，帮助创作者高效管理萌宠内容与文案产出。","inLanguage":"zh-CN"}
+</script>
+<link href="assets/vendor/materialize/css/materialize.min.css" rel="stylesheet">
+
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://ymw.pages.dev/","title":"诱咪网：AI 喵内容生成任务台，一键批量产出与实时追踪","pubDate":"2026-10-25T15:24:20","upDate":"2026-10-25T15:24:20"}</script>
+<link rel="stylesheet" href="assets/f5i267.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="/" class="logo"><span class="logo-mark">诱</span>诱咪网</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#top" class="active">首页</a></li>
+        <li><a href="#cat-1">萌宠图文</a></li>
+        <li><a href="#cat-2">短视频脚本</a></li>
+        <li><a href="#cat-3">种草文案</a></li>
+        <li><a href="#cat-4">专栏长文</a></li>
+      </ul>
+    </nav>
+    <div class="nav-tools">
+      <span class="status-dot"><i></i>生成服务正常</span>
+      <button class="bell" aria-label="通知">🔔</button>
+      <a class="btn-primary" href="#cta">新建生成任务</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<div class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag">🚀 本周新增生成任务 128,540 条</span>
+      <h1>诱咪网：让 AI 替你把<em>喵内容</em>写得又快又稳</h1>
+      <p class="lead">从萌宠日常到种草带货，把想法丢进任务清单，诱咪网自动跑模型、记耗时、算字数，生成失败一键重试，产出进度全程看得见。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#cta">免费开始生成</a>
+        <a class="btn-ghost" href="#tasks">看看今天的任务清单</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>3.2 秒</b><span>平均首字响应</span></div>
+        <div class="hero-stat"><b>12 款</b><span>可切换生成模型</span></div>
+        <div class="hero-stat"><b>99.4%</b><span>任务成功率</span></div>
+      </div>
+    </div>
+    <div class="panel" aria-label="任务面板示例">
+      <div class="panel-head"><span>今日任务</span><a class="ph-link" href="#tasks">查看全部 →</a></div>
+      <div class="task-row">
+        <div><div class="t-name">猫咪秋季换毛科普长文</div><div class="t-url">已发布 · 图文专栏</div></div>
+        <div class="t-time">开始 10-17 09:12<br>结束 10-17 09:24 · 用时 <b>12m06s · 3820 字</b></div>
+        <div><span class="badge-gh">DL</span> deepseek-v3</div>
+        <div><span class="status-pill st-ok">已完成</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="t-name">布偶猫接毛零食种草笔记</div><div class="t-url">草稿 · 待人工润色</div></div>
+        <div class="t-time">开始 10-17 10:02<br>结束 10-17 10:05 · 用时 <b>3m41s · 926 字</b></div>
+        <div><span class="badge-gh">GH</span> glm-flash</div>
+        <div><span class="status-pill st-ok">已完成</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="t-name">宠物粮测评视频口播脚本</div><div class="t-url">重试中 · 第 2 次</div></div>
+        <div class="t-time">开始 10-17 11:30<br>用时 <b>15m28s · 1746 字</b></div>
+        <div><span class="badge-gh">QW</span> qwen-plus</div>
+        <div><span class="status-pill st-fail">生成失败</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 核心卖点 -->
+<section class="block alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">为什么选诱咪网</span>
+      <h2>一条任务清单，管住所有生成流程</h2>
+      <p>诱咪网把分散在各个对话窗口里的创作需求收拢成结构化任务：谁在跑、跑到哪、花了多久、写了多少字，每一条都清清楚楚。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon">⏱</div><h3>耗时与字数实时结算</h3><p>每条任务自动记录开始时间、结束时间与用时，产出字数即时统计，异常耗时会被红色标记，方便快速定位卡住的任务。</p></div>
+      <div class="card"><div class="icon">🔁</div><h3>失败一键重试、随时换模型</h3><p>生成失败不用重头再来，点一下重试即可沿用原任务参数；同一个任务也可以直接换模型再跑一遍，对比不同模型的产出风格。</p></div>
+      <div class="card"><div class="icon">📋</div><h3>批量队列自动排队</h3><p>一次提交几十条选题，队列按优先级自动执行，凌晨挂任务白天收稿，创作排期不再被生成速度拖住。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="block" id="cats">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">内容频道</span>
+      <h2>四个方向，覆盖喵内容创作的日常</h2>
+      <p>每个频道都配好了提示词模板与产出结构，点进去就能直接开工。</p>
+    </div>
+    <div class="grid-4">
+      <a class="cat-card" id="cat-1" href="#cat-1"><span class="num">01</span><h3>萌宠图文</h3><p>养猫日常、健康科普、行为解读，图文并茂的专栏级内容一键成稿。</p><span class="go">进入频道 →</span></a>
+      <a class="cat-card" id="cat-2" href="#cat-2"><span class="num">02</span><h3>短视频脚本</h3><p>15 秒到 3 分钟口播脚本，自带分镜节奏与互动钩子设计。</p><span class="go">进入频道 →</span></a>
+      <a class="cat-card" id="cat-3" href="#cat-3"><span class="num">03</span><h3>种草文案</h3><p>宠物用品测评、好物清单、带货笔记，语气自然不生硬。</p><span class="go">进入频道 →</span></a>
+      <a class="cat-card" id="cat-4" href="#cat-4"><span class="num">04</span><h3>专栏长文</h3><p>三千字以上的深度长文，支持分段生成与全文一致性校对。</p><span class="go">进入频道 →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 任务清单详情 -->
+<section class="block alt" id="tasks">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">任务面板</span>
+      <h2>每一条生成记录，都值得被认真对待</h2>
+      <p>诱咪网的任务列表像一张干净的工作台账：站点、时间、模型、账号、耗时、状态、操作，一屏看全。</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><span>本周生成记录 · 共 86 条</span><a class="ph-link" href="#cta">导出报表 →</a></div>
+      <div class="task-row">
+        <div><div class="t-name">三花猫为什么爱踩奶</div><div class="t-url">图文专栏 · 已发布</div></div>
+        <div class="t-time">开始 10-16 20:11<br>结束 10-16 20:19 · 用时 <b>8m12s · 2460 字</b></div>
+        <div><span class="badge-gh">DL</span> deepseek-v3</div>
+        <div class="op-group"><span class="status-pill st-ok">已完成</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="t-name">猫咪冻干品牌横评笔记</div><div class="t-url">种草文案 · 待审核</div></div>
+        <div class="t-time">开始 10-16 21:40<br>结束 10-16 21:46 · 用时 <b>6m03s · 1580 字</b></div>
+        <div><span class="badge-gh">QW</span> qwen-max</div>
+        <div class="op-group"><span class="status-pill st-ok">已完成</span></div>
+      </div>
+      <div class="task-row">
+        <div><div class="t-name">新手养猫避坑指南系列（5 篇）</div><div class="t-url">批量任务 · 队列执行中</div></div>
+        <div class="t-time">开始 10-17 08:00<br>已产出 <b>3 / 5 篇 · 7312 字</b></div>
+        <div><span class="badge-gh">GL</span> glm-4-plus</div>
+        <div class="op-group"><button class="op-btn">查看进度</button><button class="op-btn">暂停</button></div>
+      </div>
+      <div class="task-row">
+        <div><div class="t-name">橘猫减肥日记口播脚本</div><div class="t-url">短视频脚本 · 重试后成功</div></div>
+        <div class="t-time">开始 10-17 11:30<br>重试成功 · 用时 <b>15m28s · 1746 字</b></div>
+        <div><span class="badge-gh">QW</span> qwen-plus</div>
+        <div class="op-group"><button class="op-btn">查看产出</button><button class="op-btn danger">删除</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section class="block">
+  <div class="container">
+    <div class="num-strip">
+      <div class="ns"><b>128 万+</b><span>累计生成任务</span></div>
+      <div class="ns"><b>4.6 亿</b><span>累计产出字数</span></div>
+      <div class="ns"><b>37 秒</b><span>平均单篇短文用时</span></div>
+      <div class="ns"><b>8,900+</b><span>活跃创作者</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 模型矩阵 -->
+<section class="block alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">模型能力</span>
+      <h2>十二款模型，按任务挑着用</h2>
+      <p>写科普用长文强的，写口播用节奏快的，跑批量用性价比高的——诱咪网不绑定单一模型。</p>
+    </div>
+    <div class="card" style="padding:28px">
+      <h3 style="margin-bottom:16px">当前可用模型池</h3>
+      <div>
+        <span class="model-tag">deepseek-v3 · 深度长文</span>
+        <span class="model-tag">glm-4-plus · 批量稳定</span>
+        <span class="model-tag">qwen-max · 中文语感</span>
+        <span class="model-tag">qwen-plus · 均衡之选</span>
+        <span class="model-tag">glm-flash · 极速草稿</span>
+        <span class="model-tag">deepseek-flash · 高频任务</span>
+        <span class="model-tag">moonshot-v2 · 创意叙事</span>
+        <span class="model-tag">hunyuan-pro · 知识问答</span>
+        <span class="model-tag">doubao-lite · 轻量种草</span>
+        <span class="model-tag">ernie-4 · 事实校验</span>
+        <span class="model-tag">baichuan-s · 摘要提炼</span>
+        <span class="model-tag">step-2 · 多轮改写</span>
+      </div>
+      <p style="margin-top:18px;font-size:14px;color:var(--c-sub)">同一任务可在任意模型之间热切换，切换后沿用原始提示词与产出上下文，不用重新描述需求。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 使用流程 -->
+<section class="block">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">怎么开工</span>
+      <h2>诱咪网三步跑通第一条任务</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>选频道、写选题</h3><p>挑一个内容频道，把选题、字数和语气偏好填进任务卡，也可以粘贴参考稿让 AI 对齐风格。</p></div>
+      <div class="step"><h3>挑模型、排队跑</h3><p>根据任务类型选模型，单条或批量提交；队列实时显示每条任务的开始、结束与用时。</p></div>
+      <div class="step"><h3>审产出、定稿发布</h3><p>产出附带字数与状态标注，通过后一键复制或发布；不满意的段落可指定模型局部重写。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="block alt">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">创作者反馈</span>
+      <h2>他们已经在用诱咪网交稿</h2>
+    </div>
+    <div class="grid-3">
+      <div class="quote"><p>「批量任务太好用了，晚上挂 20 条选题，早上起来全是成稿，耗时和字数一目了然，排期心里有底。」</p><div class="who">阿橘妈妈<span>萌宠图文账号主理人 · 粉丝 42 万</span></div></div>
+      <div class="quote"><p>「失败重试不丢上下文这点很关键，之前在别处换模型等于重写一遍，诱咪网点一下就接着跑。」</p><div class="who">猫舍老周<span>宠物用品带货主播</span></div></div>
+      <div class="quote"><p>「长文一致性校对救了我，三千字的猫咪疾病科普分段生成也能保持术语统一，编辑几乎不用返工。」</p><div class="who">林小满<span>宠物医疗专栏作者</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 频道内容速览 -->
+<section class="block">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">频道速览</span>
+      <h2>最近的热门产出长什么样</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><span class="chip">萌宠图文</span><h3>猫咪吐毛球的频率多少算正常</h3><p>用 veterin 术语表校对过的科普长文，2400 字，附喂化毛膏的时机建议。</p></div>
+      <div class="card"><span class="chip">短视频脚本</span><h3>小猫第一次洗澡的全过程脚本</h3><p>45 秒口播稿，自带 6 个分镜点位与 3 处互动提问钩子。</p></div>
+      <div class="card"><span class="chip">种草文案</span><h3>秋季猫窝挑选清单</h3><p>五款猫窝横评，语气口语化，适合笔记平台直接发布。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block alt" id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-kicker">常见问题</span>
+      <h2>开工前你可能想知道</h2>
+    </div>
+    <details class="faq-item" open><summary>生成失败的任务会扣费吗？</summary><div class="faq-body">不会。任务状态标为「生成失败」时，对应额度会自动退回账户，重试成功才正常计费。</div></details>
+    <details class="faq-item"><summary>同一个任务可以换模型重跑吗？</summary><div class="faq-body">可以。在任务操作里点「换模型」，选择新的模型后沿用原提示词与上下文重新生成，两次产出都会保留供对比。</div></details>
+    <details class="faq-item"><summary>批量任务最多能一次提交多少条？</summary><div class="faq-body">普通账户单批上限 50 条，创作者认证后可提升至 200 条，队列会按提交顺序自动执行。</div></details>
+    <details class="faq-item"><summary>产出内容可以直接商用吗？</summary><div class="faq-body">可以。诱咪网产出的文本归账户所有者使用，用于账号运营、电商物料与商业稿件均无额外授权费用。</div></details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="block" id="cta">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>现在开一个任务，看看诱咪网的成稿速度</h2>
+        <p>新用户免费获得 50,000 字生成额度，无需绑定支付方式。</p>
+      </div>
+      <button class="btn-white">免费领取额度</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="logo"><span class="logo-mark">诱</span>诱咪网</div>
+        <p>面向内容创作者的 AI 喵内容生成任务台，让每一条任务都有清晰的时间、字数与状态记录。</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#cat-1">萌宠图文</a></li>
+          <li><a href="#cat-2">短视频脚本</a></li>
+          <li><a href="#cat-3">种草文案</a></li>
+          <li><a href="#cat-4">专栏长文</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>平台功能</h4>
+        <ul>
+          <li><a href="#tasks">任务面板</a></li>
+          <li><a href="#cta">批量队列</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#top">服务状态</a></li>
+          <li><a href="#top">联系合作</a></li>
+          <li><a href="#top">用户协议</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 诱咪网 · ymw.pages.dev</span>
+      <span>生成服务运行正常 · 数据每 5 分钟同步</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/materialize/js/materialize.min.js"></script>
+<script>
+document.getElementById('menuToggle').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+</body>
+
+</html>
